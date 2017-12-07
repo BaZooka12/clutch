@@ -6,7 +6,29 @@
 </head>
 <body>
     <script>
-        // your code here...
+    	
+        function transform(str) {
+        	var upper = 0;
+        	var	lower = 0;
+        	for (var i = 0; i < str.length; i++) {
+        		if (str[i] == str[i].toUpperCase()){
+        			upper ++;
+        		} 
+        		else {
+        			lower ++;
+        		}
+        	}
+        	if (upper>lower) { 
+        		return str.toUpperCase();
+        	}
+        	else {
+        		return str.toLowerCase();
+        	}
+        }
+
+        transform('aDnjkSKdcjKD');
+        transform('aDKbF');
+        transform('acDKbF');
     </script>
 </body>
 </html>
