@@ -7,16 +7,18 @@
 <body>
     <script>
 
-        function one(string,n){
+      function one(string,n){
 
-        	if(string.length>n){
-        		string+="...";
+        	if(string.length>n && n%2==0){
+        	var	b = string.slice(0,n) + "...";
+        	cosnole.log(b);
         	}
+
         	cosnole.log(string);
 
         }
         
-        one("1234",3);
+        one("easy",3);
     </script>
 </body>
 </html>
