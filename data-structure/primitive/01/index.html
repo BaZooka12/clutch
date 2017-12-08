@@ -6,14 +6,17 @@
 </head>
 <body>
     <script>
-        a = 1.10;
-			if(a%2==0){
-			alert("true");
+    	function isInt(a){
+        
+			if(a%1==0){
+			return true;
 			}
 			else {
-			alert("false");
-			}
-
+			return false;
+				}
+	}
+	isInt(123);
+	isInt(123.4);
     </script>
 </body>
 </html>

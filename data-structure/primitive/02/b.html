@@ -6,14 +6,17 @@
 </head>
 <body>
     <script>
-        var numb = 123;
-        var str = String(numb);
-        var strRev;
-        for(i=str.length-1;i>=0;i--){
-            strRev+=str[i];
+        function reverse (numb){
+            var str = String(numb);
+            var strRev="";
+            for(i=str.length-1;i>=0;i--){
+                strRev+=str[i];
+            }
+            var newnumb = Number(strRev);
+            return (newnumb);
         }
-        var b = Number(strRev);
-        alert(b);
+        reverse(123);
+        reverse(1.43);
     </script>
 </body>
 </html>

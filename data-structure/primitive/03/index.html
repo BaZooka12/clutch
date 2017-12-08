@@ -7,18 +7,19 @@
 <body>
     <script>
 
-      function one(string,n){
+      function truncate(string,n){
 
-        	if(string.length>n && n%2==0){
-        	var	b = string.slice(0,n) + "...";
-        	cosnole.log(b);
+        	if(string.length>n && n%1==0){
+        	var	cut = string.slice(0,n) + "...";
+        	return cut;
         	}
-
-        	cosnole.log(string);
-
+            else {
+              return string;  
+            }
+        	
         }
-        
-        one("easy",3);
+        truncate('danealohaha', 4);
+        truncate('alo', 4);
     </script>
 </body>
 </html>
