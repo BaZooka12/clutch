@@ -6,7 +6,22 @@
 </head>
 <body>
     <script>
-        // your code here...
+    	function separating (serp) {
+    		result = "";
+    		for (var i = 0; i < serp.length; i++) {
+    			if (serp[i] == serp[i].toUpperCase()) {
+    				result += ' ' +serp[i].toLowerCase();
+    			} else {
+    				result += serp[i]; 
+    			}
+    			
+    		}
+    		console.log(result);
+    		// если буква в верхнем регистре,то перед ней вставить пробел и букву преобразовать в нижний регистр;
+    		// body...
+    	}
+
+        separating('getElementBy');
     </script>
 </body>
 </html>
