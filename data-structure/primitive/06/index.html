@@ -6,7 +6,20 @@
 </head>
 <body>
     <script>
-        // your code here...
+        function count (word) {
+    		result = "";
+    		if(word != ""){
+    				result++;
+    			}
+    		for (var i = 0; i < word.length; i++) {
+    			if (word[i] == ' ') {
+    				result ++;
+    			} 
+    		}
+    		console.log(result);
+    	}
+
+        count('you shall not pass');
     </script>
 </body>
 </html>
