@@ -6,7 +6,20 @@
 </head>
 <body>
     <script>
-        // your code here...
+    	function sum(numb) {
+    		var str = String(numb);
+    		var summury ="";
+    		var multiply ="";
+            if(+multiply == 0){
+                    multiply = 1;
+                }                   
+    		for (var i = 0; i < str.length; i++) {
+    			summury = +summury + +str[i];
+                multiply = multiply * +str[i];
+    		}
+    		console.log(String(summury),String(multiply));
+    	}
+        sum(1434);
     </script>
 </body>
 </html>
