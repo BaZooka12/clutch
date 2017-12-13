@@ -8,11 +8,14 @@
     <script>
         function reverse (arr) {
             // your code here
-
-
-
-            return arr;
+            arrNew = [];
+			for(i = arr.length-1; i >= 0; i--){
+			     arrNew += arr[i] + ' ';
+			 }
+			 console.log(arrNew);
+            return arrNew;
         }
+        reverse([1, 2, 3]);
     </script>
 </body>
 </html>
