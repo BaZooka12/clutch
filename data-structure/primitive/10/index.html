@@ -6,7 +6,32 @@
 </head>
 <body>
     <script>
-        // your code here...
+    	function kambola (stroka) {
+    		var arr = stroka.split(' ');
+    		console.log(arr);
+    		semga = "";
+    		borsh = arr[0];
+    		for (var i = 0; i < arr.length; i++) {
+    			if (semga.length > arr[i].length) {
+    				
+    			} else {
+    				semga = arr [i];
+    			}
+    		}
+    		for (var i = 0; i < arr.length; i++) {
+ 
+    			if (borsh.length < arr[i].length ) {
+    				
+    			} else  {
+    				borsh = arr [i];
+    			}
+    		}
+    		console.log(semga);
+    		console.log(borsh);
+    		// body...
+    	}
+
+        kambola ('Мы пишем сервис отсылки сообщений и посетитель вводит');
     </script>
 </body>
 </html>
